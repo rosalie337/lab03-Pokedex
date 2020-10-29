@@ -6,7 +6,7 @@ Multi-day lab to build a searchable, pageable, sortable pokemon viewer that call
 
 The API is available here: https://alchemy-pokedex.herokuapp.com. You will not need it until day 2 of the lab. 
 
-Long story shot, on load the page should show a list of all pokemon. Then, if the user searches (that is, after clicking the "Search" button) the list should be filtered down to pokemon whose names include the search query. The user should be able to sort the pokemon in ascending or descending order according to a category.
+Long story short, on load the page should show a list of all pokemon. Then, if the user searches (that is, after clicking the "Search" button) the list should be filtered down to pokemon whose names include the search query. The user should be able to sort the pokemon in ascending or descending order according to a category.
 
 ### Desktop
 
@@ -48,7 +48,7 @@ Offer sorting based one of (offer the user a dropdown):
 1. Pokemon name (default)
 1. Type
 1. Attack
-1. Defence
+1. Defense
 
 ---
 
@@ -59,8 +59,9 @@ Looking For | Points (10)
 [ ] In README.md, show a screenshot of diagram of Component Hierarchy, labeling the flow of `props` and location of `state` | 1
 [ ] Deployed on Netlify, nice looking CSS | 1
 [ ] `PokeList` component that takes in (as props) a list of pokemon and filters, renders a list of `PokeItem` components on load and after searches | 2
-[ ]`Searchbar` component (input and submit button) that takes a callback to manage App.js state (successfully filters pokemon on the screen) | 2
+[ ]`Search bar` component (input and submit button) that takes a callback to manage App.js state (successfully filters pokemon on the screen) | 2
 [ ] Working `Sort` component with TWO dropdowns for sorting pokemon in ascending/descending order by a given category | 2
 [ ] Add a SearchCategory (with a callback) with a group of radio button to search for pokemon by different categories | + 1
 
 (Tomorrow: wire it with an API and add React router!)
+
