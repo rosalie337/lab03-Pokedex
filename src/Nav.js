@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import Search from './Search'
 
-export default class Header extends Component {
+export default class Nav extends Component {
     render() {
         return (
             <div>
-                
+                <Search />
             </div>
         )
     }
