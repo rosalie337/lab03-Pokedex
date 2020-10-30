@@ -1,14 +1,26 @@
 import './App.css';
-import Header from './Header.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import Nav from './Nav.js';
-//import PokeList from './PokeList';
+import Home from './Home.js'
+import PokeList from './PokeList';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-        <Nav />
-    </div>
+    <Router>
+      <Nav />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="list">
+          <PokeList />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
