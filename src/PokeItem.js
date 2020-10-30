@@ -5,11 +5,11 @@ export default class PokeItem extends Component {
         return (
             <li className="poke-description">
                 <div>
-                    <img src={this.props.pokemon.url_image} alt={this.props.pokemon.pokemon}/>
-                    <p>{this.props.pokemon.name}</p>
-                    <p>{this.props.pokemon.type}</p>
-                    <p>{this.props.pokemon.attack}</p>
-                    <p>{this.props.pokemon.defense}</p>
+                    <img src={this.props.image} alt={this.props.pokemon}/>
+                    <p>{this.props.name}</p>
+                    <p>{this.props.type}</p>
+                    <p>{this.props.attack}</p>
+                    <p>{this.props.defense}</p>
                 </div>
             </li>
         )

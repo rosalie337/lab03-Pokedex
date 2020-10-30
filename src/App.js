@@ -4,22 +4,24 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Nav from './Nav.js';
 import Home from './Home.js'
 import PokeList from './PokeList';
+import Header from './Header';
+import Footer from './Footer';
 
 function App() {
   return (
     <Router>
-      <Nav />
+      <Header />
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="list">
+        <Route path="/list">
           <PokeList />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
