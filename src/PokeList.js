@@ -12,20 +12,22 @@ export default class PokeList extends Component {
         await this.fetchPokeItem();
     }
 
-    fetchPokeItem = async () => {
-        const response = await fetch.get (`https://alchemy-pokedex.herokuapp.com/api/pokedex?pokemon=${this.state.pokemonName}`);
-
-        this.setState({pokemon: response.body.results});
-    }
     handleSubmit = async (e) => {
         e.preventDefault();
         await this.fetchPokeItem()
     }
-
+    
     handleChange = (e) => {
         this.setState({pokemonName: e.target.value })
         console.log(this.state.pokemonName);
     }
+    
+    fetchPokeItem = async () => {
+        const response = await fetch.get (`https://alchemy-pokedex.herokuapp.com/api/pokedex?pokemon=${this.state.pokemonName}`);
+                
+        this.setState({pokemon: response.body.results});
+    }
+    
     render() {
         return (
             <div>
