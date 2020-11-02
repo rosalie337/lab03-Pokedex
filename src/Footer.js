@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import Search from './Search'
 
-export default class Nav extends Component {
+export default class Footer extends Component {
     render() {
         return (
             <div>
-                <Search />
+                Footer
             </div>
         )
     }
